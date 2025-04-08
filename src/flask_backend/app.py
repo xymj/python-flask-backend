@@ -1,6 +1,6 @@
 from flask import Flask, jsonify, request
-from db import get_db_connection, create_table, insert_data, query_data
-from controllers.web import web_bp  # 导入控制器蓝图
+from flask_backend.db import get_db_connection, create_table, insert_data, query_data
+from flask_backend.controllers.web import web_bp  # 导入控制器蓝图
 
 app = Flask(__name__)
 # 注册蓝图到主应用

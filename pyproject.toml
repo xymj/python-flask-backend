@@ -24,3 +24,7 @@ pytest = "^8.3.5"
 [build-system]
 requires = ["poetry-core>=2.0.0,<3.0.0"]
 build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+start = "src.flask_backend.app:app"  # 替换为你的入口函数
+
