@@ -228,3 +228,5 @@ logging.basicConfig(level=logging.INFO)
     poetry run flask --app "src.flask_backend.app:app" run  --host 0.0.0.0 --port 5001 --debug   # 注意，此命令启动各python模块之间的引用尽量使用相对路径，或者引用使用project-root包下的绝对路径
 2. 以python命令启动
     poetry run python src/flask_backend/app.py   # 注意，引用使用project-root包下的绝对路径
+
+Flask方式创建项目，以及提供http后端服务，是dify实现逻辑
